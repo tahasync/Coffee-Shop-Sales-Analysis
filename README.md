@@ -1,45 +1,21 @@
-# ☕ Coffee Shop Sales Analysis
+# Coffee Shop Sales Analysis — March vs April Comparison
 
-A product sales comparison analysis focusing on Coffee Shop Beverages — comparing March vs April performance.
+A single Jupyter notebook comparing March and April sales for 19 coffee shop products using pandas and matplotlib.
 
----
+## What it does
 
-## 📊 Overview
+Reads a 19-row CSV of coffee shop product sales, computes totals and growth rates per product, identifies top sellers and fastest-growing items, and produces bar charts and pie charts. Pure descriptive analytics — no statistical modeling or predictions.
 
-This project analyzes coffee shop sales data to understand how core drinks anchor revenue while seasonal offerings drive growth.
+## Tech stack
 
-### Key Metrics
+Python, pandas, matplotlib, Jupyter
 
-- **Total March Sales:** $25,050
-- **Total April Sales:** $29,210
-- **Overall Growth:** 16.6%
+## Files
 
-### Top 5 Products (April Sales)
+- `Coffee Shop Sales Analysis.ipynb` — Notebook with 14 cells (all executed successfully)
+- `Coffee Shop Sales Analysis.csv` — Dataset (19 products, March vs April sales)
+- `Coffee Shop Sales Analysis.pdf` — Exported PDF version
 
-| Product | Sales | Revenue Share |
-|:--------|:------|:-------------|
-| Latte | $3,680 | 12.6% |
-| Cappuccino | $2,400 | 8.2% |
-| Breakfast Sandwich | $2,350 | 8.0% |
-| Cold Brew | $2,200 | 7.5% |
-| Iced Latte | $1,950 | 6.7% |
+## Status
 
-### Fastest Growing Products
-
-- Veggie Wrap — 20.8% growth
-- Scone — 20.0% growth
-- Coffee Beans — 20.0% growth
-
----
-
-## 🛠️ Tech Stack
-
-Python, Pandas, Matplotlib, Jupyter Notebook
-
----
-
-## 📂 Files
-
-- `Coffee Shop Sales Analysis.csv` — Raw dataset
-- `Coffee Shop Sales Analysis.ipynb` — Analysis notebook with visualizations
-- `Coffee Shop Sales Analysis.pdf` — Exported report
+**Basic EDA exercise.** The notebook runs end-to-end with no errors. The dataset is a manually-created spreadsheet, not from a real coffee shop. Hardcoded absolute file path means you must update the `pd.read_csv()` call to run it on your machine.
